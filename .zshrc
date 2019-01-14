@@ -174,21 +174,26 @@ export PATH="/Users/les/anaconda2/bin:$PATH"
 export PATH="/Users/les/.composer/vendor/bin:$PATH"
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
-alias vpn='sudo route delete 112.121.78.253; sudo openconnect -b --authgroup=SSLVPN2 -U nobody -u minileslee vpn.vgs.tw'
-alias vpn.down='sudo killall openconnect; killall ssh'
 alias les='ssh z20240@172.104.108.134'
 alias ales='ssh root@172.104.108.134'
-alias mongod='cd ~/Documents/mongodb-osx-x86_64-3.4.5/bin/ ; ./mongod --dbpath=../data/db;'
-alias mongo='cd ~/Documents/mongodb-osx-x86_64-3.4.5/bin/ ; ./mongo'
+
 alias sublime='open -a "Sublime Text"'
 alias vsc='open -a "Visual Studio Code"'
 alias iTunes='open -a "iTunes"'
 alias line='open -a "LINE"'
-alias act_tensorflow='source ~/tensorflow/bin/activate'
+
+alias attmux='tmux attach-session -t'
+alias killtmux='tmux kill-session -t'
+alias lstmux='tmux list-sessions'
+
 alias rds='mysql -u z20240 -h card-game.cwqmxqfkupjd.ap-northeast-1.rds.amazonaws.com -P 3306 -p'
 alias ec2='ssh -i ~/.ssh/AWS_MyKeyPair.pem ec2-user@ec2-13-115-229-16.ap-northeast-1.compute.amazonaws.com'
-alias artisan="php $PWD/artisan"
+
 alias redis='redis-server'
+
+alias ptt='ssh bbsu@ptt.cc'
+alias timestamp='date +%s'
+
 alias amysql='mysql -u root -p'
 alias mysql='mysql -u z20240 -p'
 
