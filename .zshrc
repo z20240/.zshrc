@@ -2,7 +2,7 @@
 # export PATH=$HOME/bin:/usr/local/bin:$PATH
 
 # Path to your oh-my-zsh installation.
-export ZSH=~/.oh-my-zsh
+export ZSH=$HOME/.oh-my-zsh
 
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
@@ -169,9 +169,9 @@ fi
 #
 export PATH="/usr/local/mysql/bin:$PATH"
 # added by Anaconda2 installer
-export PATH="~/anaconda2/bin:$PATH"
+export PATH="$HOME/anaconda2/bin:$PATH"
 
-export PATH="~/.composer/vendor/bin:$PATH"
+export PATH="$HOME/.composer/vendor/bin:$PATH"
 export PATH="/Applications/Visual Studio Code.app/Contents/Resources/app/bin:$PATH"
 
 alias les='ssh z20240@172.104.108.134'
