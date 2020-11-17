@@ -52,7 +52,12 @@ ZSH_THEME="afowler"
 # Custom plugins may be added to ~/.oh-my-zsh/custom/plugins/
 # Example format: plugins=(rails git textmate ruby lighthouse)
 # Add wisely, as too many plugins slow down shell startup.
-plugins=(git zsh-autosuggestions)
+plugins=(
+  git 
+  zsh-autosuggestions 
+  autojump 
+  zsh-syntax-highlighting
+)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -197,4 +202,4 @@ alias timestamp='date +%s'
 alias amysql='mysql -u root -p'
 alias mysql='mysql -u z20240 -p'
 
-
+[[ -s $(brew --prefix)/etc/profile.d/autojump.sh ]] && . $(brew --prefix)/etc/profile.d/autojump.sh
